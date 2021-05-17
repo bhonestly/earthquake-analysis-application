@@ -81,7 +81,8 @@ This schedule will be used to keep track of your progress throughout the week an
 You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 |   Day   |   Deliverable   |   Status   |
 |---------|-----------------|------------|
-May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
+| May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
+| May 17 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete |
 
 ## Priority Matrix
 Include a full list of features that have been prioritized based on the Time and Importance Matrix. Link this image in a similar manner to your wireframes
