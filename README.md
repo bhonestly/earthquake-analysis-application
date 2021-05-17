@@ -62,7 +62,7 @@ Link to wireframe…Shows proposed user interface page
 [Wireframe Model](https://imgur.com/x1icC5T)
 
 ## MVP
-1. Choose items from dropdown menu
+1. Choose filtering by Location, Magnitude, Time or Tsunami from individual dropdown menus
 2. Render data for each dropdown menu in the results list
 3. Create button to refresh page
 4. Add background image to the page
@@ -72,8 +72,6 @@ Link to wireframe…Shows proposed user interface page
 2. Render Earthquake API data onto a map
 
 ## Project Schedule
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 |   Day   |   Deliverable   |   Status   |
 |---------|-----------------|------------|
 | May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
@@ -102,7 +100,5 @@ Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/z1cD
 | TOTAL HOURS | H | N/A | 21hrs | 3hrs | 3hrs |
 
 ## Code Snippet
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ## Change Log
-Use this section to document what changes were made and the reasoning behind those changes.
