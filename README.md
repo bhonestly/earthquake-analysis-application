@@ -8,7 +8,7 @@ User will be able to search earthquake data from across the world for the past d
 
 ## API and Data Sample
 I am using the USGS Earthquake API.  
-Link here… [title](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/)
+Link here… [USGS API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/)
 
 ## Code Snippet
 ```
