@@ -91,13 +91,20 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 |-----------|----------|----------------|---------------|-------------|
-| Calling API | H | 2hrs | N/A | N/A
+| Build out Pre-Project Approval Materials | H | 1hrs | 3hrs | 3hrs |
+| Calling API | H | 3hrs | N/A | N/A | N/A |
+| Create Dropdown Menus | H | 2hrs | N/A | N/A |
+| Create form for Menu Items 1-2 | H | 3hrs | N/A | N/A |
+| Create form for Menu Items 3-4 | H | 2hrs | N/A | N/A |
+| Render Menu for Menu Items 1-2 | H | 3hrs | N/A | N/A |
+| Render Menu for Menu Items 3-4 | H | 2hrs | N/A | N/A |
+| Add Background Image | M | 1hrs | N/A | N/A |
+| Test/Refactor Code | M | 3hrs | N/A | N/A |
+| CSS Buildout | L | 3hrs | N/A | N/A |
+| TOTAL HOURS | H | 21hrs | 3hrs | 3hrs |
 
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
 
 ## Change Log
 Use this section to document what changes were made and the reasoning behind those changes.
