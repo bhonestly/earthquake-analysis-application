@@ -82,22 +82,27 @@ Link to wireframe…Shows proposed user interface page
 | May 21 | Presentation of Project | Incomplete |
 
 ## Priority Matrix
-Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/z1cD0Gt)
+Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/nz2TuhJ)
 
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 |-----------|----------|----------------|---------------|-------------|
-| Build out Pre-Project Approval Materials | H | 1hrs | 3hrs | 3hrs |
+| Build out Pre-Project Approval Materials | H | 3hrs | 3hrs | 3hrs |
 | Calling API | H | 3hrs | N/A | N/A | N/A |
-| Create Dropdown Menus | H | 2hrs | N/A | N/A |
-| Create form for Menu Items 1-2 | H | 3hrs | N/A | N/A |
-| Create form for Menu Items 3-4 | H | 2hrs | N/A | N/A |
-| Render Menu for Menu Items 1-2 | H | 3hrs | N/A | N/A |
-| Render Menu for Menu Items 3-4 | H | 2hrs | N/A | N/A |
+| Filter Location Data Functionality | H | 2hrs | N/A | N/A |
+| Filter MagnitudeData Functionality | H | 2hrs | N/A | N/A |
+| Filter Time Data Functionality | H | 2hrs | N/A | N/A |
+| Filter Tsunami Data Functionality | H | 2hrs | N/A | N/A |
+| Appending Earthquake Results by Location | H | 2hrs | N/A | N/A |
+| Appending Earthquake Results by Magnitude| H | 2hrs | N/A | N/A |
+| Appending Earthquake Results by Time | H | 2hrs | N/A | N/A |
+| Appending Earthquake Results by Tsunami | H | 2hrs | N/A | N/A |
 | Add Background Image | M | 1hrs | N/A | N/A |
 | Test/Refactor Code | M | 3hrs | N/A | N/A |
-| CSS Buildout | L | 3hrs | N/A | N/A |
-| TOTAL HOURS | H | N/A | 21hrs | 3hrs | 3hrs |
+| CSS for Dropdown Menus | L | 3hrs | N/A | N/A |
+| CSS for Results List | L | 3hrs | N/A | N/A |
+| CSS Responsive Design | L | 3hrs | N/A | N/A |
+| TOTAL HOURS | H | 35hrs | N/A| 3hrs | 3hrs |
 
 ## Code Snippet
 
