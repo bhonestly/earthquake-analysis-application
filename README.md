@@ -8,54 +8,53 @@ User will be able to search earthquake data from across the world for the past d
 
 ## API and Data Sample
 I am using the USGS Earthquake API.  
-API Link: [USGS API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/)
+API Link: [USGS API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson)
 
 API Documentation Link: [Documentation](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
 
 ## Code Snippet
-```
-1.0_day.geojson
-JSON Snippet
-	{
-	type: "Feature",
-	properties: {
-	mag: 3.3,
-	place: "5 km SSW of L'Épiphanie, Canada",
-	time: 1621249402287,
-	updated: 1621251663818,
-	tz: null,
-	url: "https://earthquake.usgs.gov/earthquakes/eventpage/us7000e3rp",
-	detail: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000e3rp.geojson",
-	felt: 117,
-	cdi: 3.8,
-	mmi: null,
-	alert: null,
-	status: "reviewed",
-	tsunami: 0,
-	sig: 212,
-	net: "us",
-	code: "7000e3rp",
-	ids: ",us7000e3rp,",
-	sources: ",us,",
-	types: ",dyfi,origin,phase-data,",
-	nst: null,
-	dmin: 0.315,
-	rms: 0.62,
-	gap: 84,
-	magType: "mb_lg",
-	type: "earthquake",
-	title: "M 3.3 - 5 km SSW of L'Épiphanie, Canada"
-	},
-	geometry: {
-	type: "Point",
-	coordinates: [
-	-73.5106,
-	45.806,
-	5
-	]
-	},
-	id: "us7000e3rp"
-	},
+```json
+features: [
+{
+type: "Feature",
+properties: {
+mag: 1.14,
+place: "6km WNW of The Geysers, CA",
+time: 1621279176230,
+updated: 1621279271307,
+tz: null,
+url: "https://earthquake.usgs.gov/earthquakes/eventpage/nc73563855",
+detail: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73563855.geojson",
+felt: null,
+cdi: null,
+mmi: null,
+alert: null,
+status: "automatic",
+tsunami: 0,
+sig: 20,
+net: "nc",
+code: "73563855",
+ids: ",nc73563855,",
+sources: ",nc,",
+types: ",nearby-cities,origin,phase-data,",
+nst: 26,
+dmin: 0.01305,
+rms: 0.03,
+gap: 65,
+magType: "md",
+type: "earthquake",
+title: "M 1.1 - 6km WNW of The Geysers, CA"
+},
+geometry: {
+type: "Point",
+coordinates: [
+-122.8161697,
+38.8006668,
+2.62
+]
+},
+id: "nc73563855"
+},
 ```
 ## Wireframes
 Link to wireframe…Shows proposed user interface page
