@@ -83,6 +83,8 @@ You are responsible for scheduling time with your squad to seek approval for e
 |---------|-----------------|------------|
 | May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
 | May 17 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete |
+| May 18 | Pseudocode / actual code | Incomplete |
+| May 19 | Initial Clickable Model | Incomplete |
 
 ## Priority Matrix
 Include a full list of features that have been prioritized based on the Time and Importance Matrix. Link this image in a similar manner to your wireframes
