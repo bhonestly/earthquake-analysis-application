@@ -1,15 +1,12 @@
 # Project Overview
 
 ## Earthquake Analysis Application
-
 Deployed URL [Goes Here]
 
 ## Project Description
-
 User will be able to search earthquake data from across the world for the past day.  User will be able to look up datatypes such as magnitude, location, time and if a tsunami was associated with it.
 
 ## API and Data Sample
-
 I am using the USGS Earthquake API.  
 Link here… [title](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/)
 
@@ -59,24 +56,20 @@ JSON Snippet
 	},
 ```
 ## Wireframes
-
 Link to wireframe…Shows proposed user interface page
 [title](https://imgur.com/x1icC5T)
 
 ## MVP
-
 1. Choose items from dropdown menu
 2. Render data for each dropdown menu in the results list
 3. Create button to refresh page
 4. Add background image to the page
 
 ## PostMVP
-
 1. Add second API showing image of country where earthquake took place
 2. Render Earthquake API data onto a map
 
 ## Project Schedule
-
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.
 You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 |   Day   |   Deliverable   |   Status   |
@@ -95,7 +88,9 @@ Include a full list of features that have been prioritized based on the Time an
 ## Timeframes
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+|---------|-----------------|------------|
+| Calling API | H | 2hrs | N/A | N/A
 
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
