@@ -57,7 +57,7 @@ JSON Snippet
 ```
 ## Wireframes
 Link to wireframe…Shows proposed user interface page
-[title](https://imgur.com/x1icC5T)
+[Wireframe Model](https://imgur.com/x1icC5T)
 
 ## MVP
 1. Choose items from dropdown menu
@@ -82,7 +82,7 @@ You are responsible for scheduling time with your squad to seek approval for e
 | May 21 | Presentation of Project | Incomplete |
 
 ## Priority Matrix
-Direct Link to Priority Matrix... [title](https://imgur.com/z1cD0Gt)
+Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/z1cD0Gt)
 
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
