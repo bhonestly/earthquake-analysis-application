@@ -83,9 +83,10 @@ You are responsible for scheduling time with your squad to seek approval for e
 |---------|-----------------|------------|
 | May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
 | May 17 | Project Approval / Initial Application Structure / Pseudocode / Basic HTML Boilerplate | Incomplete |
-| May 18 | (HTML, CSS, etc.) Pseudocode / actual code | Incomplete |
-| May 19 | Initial Clickable Model | Incomplete |
-| May 20 | MVP Application | Incomplete |
+| May 18 | Core Appliction functionality | Incomplete |
+| May 19 | Initial Clickable Model / MVP | Incomplete |
+| May 20 | CSS / Post MVP buildout | Incomplete |
+| May 21 | Presentation of Project | Incomplete |
 
 
 ## Priority Matrix
