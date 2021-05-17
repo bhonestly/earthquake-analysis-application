@@ -14,7 +14,6 @@ API Documentation Link: [Documentation](https://earthquake.usgs.gov/earthquakes/
 
 ## Code Snippet
 ```json
-features: [
 {
 type: "Feature",
 properties: {
@@ -54,7 +53,7 @@ coordinates: [
 ]
 },
 id: "nc73563855"
-},
+}
 ```
 ## Wireframes
 Link to wireframe…Shows proposed user interface page
