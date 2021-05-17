@@ -15,45 +15,45 @@ API Documentation Link: [Documentation](https://earthquake.usgs.gov/earthquakes/
 ## Code Snippet
 ```json
 {
-type: "Feature",
-properties: {
-mag: 1.14,
-place: "6km WNW of The Geysers, CA",
-time: 1621279176230,
-updated: 1621279271307,
-tz: null,
-url: "https://earthquake.usgs.gov/earthquakes/eventpage/nc73563855",
-detail: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73563855.geojson",
-felt: null,
-cdi: null,
-mmi: null,
-alert: null,
-status: "automatic",
-tsunami: 0,
-sig: 20,
-net: "nc",
-code: "73563855",
-ids: ",nc73563855,",
-sources: ",nc,",
-types: ",nearby-cities,origin,phase-data,",
-nst: 26,
-dmin: 0.01305,
-rms: 0.03,
-gap: 65,
-magType: "md",
-type: "earthquake",
-title: "M 1.1 - 6km WNW of The Geysers, CA"
-},
-geometry: {
-type: "Point",
-coordinates: [
--122.8161697,
-38.8006668,
-2.62
-]
-},
-id: "nc73563855"
-}
+            "type": "Feature",
+            "properties": {
+                "mag": 3.6,
+                "place": "7km SE of Dollar Point, CA",
+                "time": 1621279480360,
+                "updated": 1621280017707,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73563860",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73563860.geojson",
+                "felt": 64,
+                "cdi": 4.6,
+                "mmi": 3.215,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 229,
+                "net": "nc",
+                "code": "73563860",
+                "ids": ",nc73563860,nn00807449,",
+                "sources": ",nc,nn,",
+                "types": ",dyfi,focal-mechanism,nearby-cities,origin,phase-data,scitech-link,shakemap,",
+                "nst": 77,
+                "dmin": 0.09402,
+                "rms": 0.57,
+                "gap": 57,
+                "magType": "ml",
+                "type": "earthquake",
+                "title": "M 3.6 - 7km SE of Dollar Point, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.0414963,
+                    39.1403351,
+                    -1.96
+                ]
+            },
+            "id": "nc73563860"
+        },
 ```
 ## Wireframes
 Link to wireframe…Shows proposed user interface page
