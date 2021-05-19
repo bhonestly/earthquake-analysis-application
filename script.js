@@ -34,25 +34,33 @@ function displayDataByLocation(filteredFeatures) {
 // display the following data.  Under geometry.coordinates 0:latitude 1:longitude 2:depth, felt, mag, place(beginning of string), tsunami, time
   const dataContainer = document.querySelector('.data-container')
   filteredFeatures.forEach( feature => {
+    const time = feature.properties.time
     const distanceFrom = feature.properties.place.split('of')[0]
     const longitude = feature.geometry.coordinates[0]
     const latitude = feature.geometry.coordinates[1]
     const depth = feature.geometry.coordinates[2]
-    // console.log(longitude)
+    const magnitude = feature.properties.mag
+    const felt = feature.properties.felt
+    const tsunami = feature.properties.tsunami
+    
     const featureTemplate = `
+    <div class="time">
+      <p>Time Happened: ${time}</p>
+    </div>
     <div class="geometry">
       <p>Distance From: ${distanceFrom}</p>
       <p>Longitude: ${longitude}</p>
       <p>Latitude: ${latitude}</p>
-      <p>Depth: ${depth}</p>
+      <p>Depth: ${depth} km</p>
+    </div>
+    <div class="outcome">
+      <p>The Magnitude was: ${magnitude}</p>
+      <p>Was Quake Felt: ${felt}</p>
+      <p>Tsunami Associated: ${tsunami}</p>
     </div>
     `
     dataContainer.insertAdjacentHTML('beforeend', featureTemplate)
   })
-  // filteredFeatures.forEach(feature => {
-  //   const locationGeometry = []
-  //   console.log(locationGeometry)
-
 }
 
 locationForm.addEventListener('submit', (e) => {
