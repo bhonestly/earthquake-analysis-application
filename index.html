@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      type="text/css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+    <title>Earthquake Anaylsis</title>
+  </head>
+  <body>
+    <h1>Earthquake Analysis Application</h1>
+    <div class="earthquake-container">
+      <form id="location-container">
+        <input type="" list="select-location" placeholder="Location" />
+        <datalist id="select-location">
+          <option value="Turkey"></option>
+        </datalist>
+        <button>Get Location</button>
+      </form>
+      <section class="location-list"></section>
+      <form id="magnitude-container">
+        <select id="select-magnitude">
+          <option disabled selected>Magnitude</option>
+        </select>
+        <button>Get Magnitude</button>
+      </form>
+      <form id="time-container">
+        <select id="select-time">
+          <option disabled selected>Time</option>
+        </select>
+        <button>Get Time</button>
+      </form>
+      <form id="tsunami-container">
+        <select id="select-tsunami">
+          <option disabled selected>Tsunami</option>
+        </select>
+        <button>Get Tsunami</button>
+      </form>
+    </div>
+  </body>
+</html>
