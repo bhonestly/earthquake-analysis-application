@@ -16,16 +16,6 @@ const locationSearch = async () => {
 }
 locationSearch()
 
-// grabbing item value using filter method
-
-
-// let locations = []
-// function filterLocations(locations, ', ') {
-//   return arr.filter(function(el))
-// }
-// console.log(locations)
-
-
 function appendData(features) {
   const uniqueLocations = []            // this empty array will hold unique locations after the features forEach runs
   const dataList = document.querySelector('#select-location')
@@ -40,8 +30,40 @@ function appendData(features) {
   })
 }
 
+function displayDataByLocation(filteredFeatures) {
+// display the following data.  Under geometry.coordinates 0:latitude 1:longitude 2:depth, felt, mag, place(beginning of string), tsunami, time
+  const dataContainer = document.querySelector('.data-container')
+  filteredFeatures.forEach( feature => {
+    const distanceFrom = feature.properties.place.split('of')[0]
+    const longitude = feature.geometry.coordinates[0]
+    const latitude = feature.geometry.coordinates[1]
+    const depth = feature.geometry.coordinates[2]
+    // console.log(longitude)
+    const featureTemplate = `
+    <div class="geometry">
+      <p>Distance From: ${distanceFrom}</p>
+      <p>Longitude: ${longitude}</p>
+      <p>Latitude: ${latitude}</p>
+      <p>Depth: ${depth}</p>
+    </div>
+    `
+    dataContainer.insertAdjacentHTML('beforeend', featureTemplate)
+  })
+  // filteredFeatures.forEach(feature => {
+  //   const locationGeometry = []
+  //   console.log(locationGeometry)
+
+}
 
 locationForm.addEventListener('submit', (e) => {
   e.preventDefault()
   console.log(featuresArray)
+  const locationInput = document.querySelector('#location-input')
+  console.log(locationInput.value)
+  const featuresByLocation = featuresArray.filter( feature => {
+    const placesArray = feature.properties.place.split('of')
+      return placesArray[1] === locationInput.value
+  })
+  console.log(featuresByLocation)
+  displayDataByLocation(featuresByLocation)
 })
