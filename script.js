@@ -16,6 +16,15 @@ const locationSearch = async () => {
 }
 locationSearch()
 
+// grabbing item value using filter method
+
+
+// let locations = []
+// function filterLocations(locations, ', ') {
+//   return arr.filter(function(el))
+// }
+// console.log(locations)
+
 
 function appendData(locations) {
   console.log(locations)
@@ -31,4 +40,3 @@ function appendData(locations) {
   })
   // console.log(placeArray)
 }
-
