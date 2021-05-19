@@ -29,12 +29,16 @@ locationSearch()
 function appendData(locations) {
   console.log(locations)
   let placeArray = []
-  // let locationArray = []
+  const dataList = document.querySelector('#select-location')
+  console.log(dataList)
   locations.forEach(location => {
     // console.log(location)
     let locationArray = location.properties.place.split('of')
     placeArray.push(locationArray[1])
     console.log(locationArray[1])
+    const optionTag = document.createElement('option')
+    optionTag.setAttribute('value', locationArray[1])
+    dataList.appendChild(optionTag)
     // let locations = features.properties.place
     // console.log(location.properties.place)
   })
