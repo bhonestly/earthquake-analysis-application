@@ -20,29 +20,34 @@
     <h1>Earthquake Analysis Application</h1>
     <div class="earthquake-container">
       <form id="location-form">
-        <input id="location-input" list="select-location" placeholder="Location" />
+        <input id="location-input" list="select-location" placeholder="Location"/>
         <datalist id="select-location">
         </datalist>
         <button type="submit">Get Location</button>
       </form>
-      <section class="location-list"></section>
+      <form id="magnitude-form">
+        <input id="min" class="magnitude-input" placeholder="min" type="number" min="1" max="10"/>
+        <input id="max" class="magnitude-input" placeholder="max" type="number" min="1" max="10"/>
+        <button type="submit">Get Magnitude</button>
+      </form>
+      <!-- <section class="location-list"></section>
       <form id="magnitude-form">
         <select id="select-magnitude">
           <option disabled selected>Magnitude</option>
         </select>
         <button>Get Magnitude</button>
+      </form> -->
+      <form id="tsunami-form">
+        <select id="select-tsunami">
+          <option disabled selected>Tsunami</option>
+        </select>
+        <button>Get Tsunami</button>
       </form>
       <form id="time-form">
         <select id="select-time">
           <option disabled selected>Time</option>
         </select>
         <button>Get Time</button>
-      </form>
-      <form id="tsunami-form">
-        <select id="select-tsunami">
-          <option disabled selected>Tsunami</option>
-        </select>
-        <button>Get Tsunami</button>
       </form>
     </div>
     <section class="data-container">
