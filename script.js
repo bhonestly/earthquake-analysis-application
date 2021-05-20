@@ -7,7 +7,7 @@ let featuresArray = []
 
 const locationSearch = async () => { 
   try {
-    const response = await axios.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson')
+    const response = await axios.get('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson')
     const data = response.data.features
     featuresArray = data
     appendLocationData(data)
@@ -75,26 +75,26 @@ locationForm.addEventListener('submit', (e) => {
   displayDataByLocation(featuresByLocation)
 })
 
-function appendMagnitudeData() {
-  const uniqueMagnitudes = []           
-  const dataList = document.querySelector('#select-magnitude')
-  featuresArray.forEach(feature => {         
-    let magnitude = feature.properties.mag
-    uniqueMagnitudes.push(magnitude)
-  })
+// function appendMagnitudeData() {
+//   const uniqueMagnitudes = []           
+//   const dataList = document.querySelector('#select-magnitude')
+//   featuresArray.forEach(feature => {         
+//     let magnitude = feature.properties.mag
+//     uniqueMagnitudes.push(magnitude)
+//   })
 
-  uniqueMagnitudes.forEach(magnitude => {        
-    const optionTag = document.createElement('option')
-    optionTag.setAttribute('value', magnitude)
-    dataList.appendChild(optionTag)
-  })
-}
+//   uniqueMagnitudes.forEach(magnitude => {        
+//     const optionTag = document.createElement('option')
+//     optionTag.setAttribute('value', magnitude)
+//     dataList.appendChild(optionTag)
+//   })
+// }
 
 function displayDataByMagnitude(filteredFeatures) {
     const dataContainer = document.querySelector('.data-container')
     filteredFeatures.forEach( feature => {
       const time = feature.properties.time
-      const location = feature.properties.place/*.split('of')[0]*/
+      const location = feature.properties.place
       const latitude = feature.geometry.coordinates[1]
       const longitude = feature.geometry.coordinates[0]
       const depth = feature.geometry.coordinates[2]
@@ -125,20 +125,29 @@ function displayDataByMagnitude(filteredFeatures) {
     e.preventDefault()
     const maxInput = document.querySelector('#max')
     const minInput = document.querySelector('#min')
-    const featuresByMaxMagnitude = featuresArray.filter(feature => parseInt(maxInput.value) >= feature.properties.mag)
-    const featuresByMinMagnitude = featuresArray.filter(feature => parseInt(minInput.value) <= feature.properties.mag)
+    // const featuresByMaxMagnitude = featuresArray.filter(feature => parseInt(maxInput.value) >= feature.properties.mag)
+    // const featuresByMinMagnitude = featuresArray.filter(feature => parseInt(minInput.value) <= feature.properties.mag)
+    const featuresByMagnitude = featuresArray.filter(feature => {
+      // console.log(typeof maxInput.value)
+      if (maxInput.value === '') {
+        maxInput.value = 10
+      } 
+      if (minInput.value === '') {
+        minInput.value = 0
+      }
+      return parseInt(maxInput.value) >= feature.properties.mag && parseInt(minInput.value) <= feature.properties.mag
+    })
+    // console.log(featuresByMagnitude)
 
-    displayDataByMagnitude(featuresByMaxMagnitude)
-    displayDataByMagnitude(featuresByMinMagnitude)
+    displayDataByMagnitude(featuresByMagnitude)
+    // displayDataByMagnitude(featuresByMinMagnitude)
   })
 
   function appendTypeData(features) {
-    // console.log(features)
     const uniqueTypes = []            
     const dataList = document.querySelector('#select-type')
     features.forEach(feature => {
       let typeString = feature.properties.type
-      // console.log(typeString)
       if (!uniqueTypes.includes(typeString))    uniqueTypes.push(typeString)   
     })
     uniqueTypes.forEach(type => {        
