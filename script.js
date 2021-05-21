@@ -51,10 +51,11 @@ function displayDataByLocation(filteredFeatures) {
     const magnitude = feature.properties.mag;
     const felt = feature.properties.felt;
     const tsunami = feature.properties.tsunami;
+    const date = new Date(time)
     const featureTemplate = `
     <div class="card">
     <div class="time">
-      <p>Time Happened: ${time}</p>
+      <p>Time Happened: ${date}</p>
     </div>
     <div class="geometry">
     <p>Distance From: ${distanceFrom}</p>
@@ -64,7 +65,7 @@ function displayDataByLocation(filteredFeatures) {
     </div>
     <div class="outcome">
       <p>The Magnitude was: ${magnitude}</p>
-      <p>Was Quake Felt: ${felt} People</p>
+      <p>Was Quake Felt: ${felt === null ? 0: felt} People</p>
       <p>Tsunami Associated: ${tsunami}</p>
     </div>
     </div>
@@ -96,10 +97,11 @@ function displayDataByMagnitude(filteredFeatures) {
       const magnitude = feature.properties.mag;
       const felt = feature.properties.felt;
       const tsunami = feature.properties.tsunami;
+      const date = new Date(time)
       const featureTemplate = `
       <div class="card">
       <div class="time">
-        <p>Time Happened: ${time}</p>
+        <p>Time Happened: ${date}</p>
       </div>
       <div class="geometry">
       <p>Location: ${location}</p>
@@ -109,7 +111,7 @@ function displayDataByMagnitude(filteredFeatures) {
       </div>
       <div class="outcome">
         <p>Magnitude: ${magnitude}</p>
-        <p>Was Quake Felt: ${felt} People</p>
+        <p>Was Quake Felt: ${felt === null ? 0: felt} People</p>
         <p>Tsunami Associated: ${tsunami}</p>
       </div>
       </div>
@@ -167,10 +169,11 @@ function displayDataByType(filteredFeatures) {
     const magnitude = feature.properties.mag;
     const felt = feature.properties.felt;
     const tsunami = feature.properties.tsunami;
+    const date = new Date(time)
     const featureTemplate = `
     <div class="card">
       <div class="time">
-        <p>Time Happened: ${time}</p>
+        <p>Time Happened: ${date}</p>
       </div>
       <div class="geometry">
       <p>Distance From: ${distanceFrom}</p>
@@ -180,7 +183,7 @@ function displayDataByType(filteredFeatures) {
       </div>
       <div class="outcome">
         <p>The Magnitude was: ${magnitude}</p>
-        <p>Was Quake Felt: ${felt} People</p>
+        <p>Was Quake Felt: ${felt === null ? 0: felt} People</p>
         <p>Tsunami Associated: ${tsunami}</p>
       </div>
       </div>
