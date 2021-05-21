@@ -138,7 +138,6 @@ magnitudeForm.addEventListener("submit", (e) => {
       parseInt(minInput.value) <= feature.properties.mag
     );
   });
-  console.log(featuresByMagnitude);
 
   displayDataByMagnitude(featuresByMagnitude);
 });

@@ -9,11 +9,9 @@ body {
 .card {
   border: 1px solid black;
   width: 300px;
-  /* flex-direction: row; */
 }
 
 .data-container {
-  /* height: 70vh; */
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
@@ -35,14 +33,13 @@ div {
   background-color: rgb(162, 151, 137)
 }
 
-.locaion-container {
-  /* flex: 1 1 33%; */
-  /* justify-content: space-around; */
-}
+/* .locaion-container {
 
-.magnitude-container {
-  /* flex: 1 auto 33%; */
-}
+} */
+
+/* .magnitude-container {
+
+} */
 
 #min {
   width: 40px;
@@ -52,15 +49,13 @@ div {
   width: 40px;
 }
 
-.type-container {
-  /* flex: 1 1 33%; */
-  /* justify-content: space-around; */
-}
+/* .type-container {
+
+} */
 
 footer {
   margin: 2px;
   text-align: right;
-  /* position: relative; */
 }
 
 @media only screen and (min-device-width: 1200px) {
