@@ -13,7 +13,6 @@ const locationSearch = async () => {
     const data = response.data.features;
     featuresArray = data;
     appendLocationData(data);
-    // appendMagnitudeData(data)
     appendTypeData(data);
     return data;
   } catch (error) {
