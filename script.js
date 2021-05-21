@@ -64,7 +64,7 @@ function displayDataByLocation(filteredFeatures) {
     </div>
     <div class="outcome">
       <p>The Magnitude was: ${magnitude}</p>
-      <p>Was Quake Felt: ${felt}</p>
+      <p>Was Quake Felt: ${felt} People</p>
       <p>Tsunami Associated: ${tsunami}</p>
     </div>
     </div>
@@ -109,7 +109,7 @@ function displayDataByMagnitude(filteredFeatures) {
       </div>
       <div class="outcome">
         <p>Magnitude: ${magnitude}</p>
-        <p>Was Quake Felt: ${felt}</p>
+        <p>Was Quake Felt: ${felt} People</p>
         <p>Tsunami Associated: ${tsunami}</p>
       </div>
       </div>
@@ -138,7 +138,6 @@ magnitudeForm.addEventListener("submit", (e) => {
       parseInt(minInput.value) <= feature.properties.mag
     );
   });
-
   displayDataByMagnitude(featuresByMagnitude);
 });
 
@@ -170,9 +169,6 @@ function displayDataByType(filteredFeatures) {
     const tsunami = feature.properties.tsunami;
     const featureTemplate = `
     <div class="card">
-      <div class="tsunami">
-        <p>Tsunami Associated: ${tsunami}</p>
-      </div>
       <div class="time">
         <p>Time Happened: ${time}</p>
       </div>
@@ -184,7 +180,8 @@ function displayDataByType(filteredFeatures) {
       </div>
       <div class="outcome">
         <p>The Magnitude was: ${magnitude}</p>
-        <p>Was Quake Felt: ${felt}</p>
+        <p>Was Quake Felt: ${felt} People</p>
+        <p>Tsunami Associated: ${tsunami}</p>
       </div>
       </div>
       `;

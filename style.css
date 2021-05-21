@@ -3,18 +3,21 @@ body {
   border: 3px solid black;
   min-height: 95vh;
   height: auto;
-  background-color: antiquewhite;
+  background-color: rgb(249, 236, 218);
 }
 
 .card {
   border: 1px solid black;
   width: 300px;
+  height: 328px;
+  background-color: rgb(237, 215, 187);
 }
 
 .data-container {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  min-height: 70vh;
 }
 
 div {
@@ -33,14 +36,6 @@ div {
   background-color: rgb(162, 151, 137)
 }
 
-/* .locaion-container {
-
-} */
-
-/* .magnitude-container {
-
-} */
-
 #min {
   width: 40px;
 }
@@ -48,10 +43,6 @@ div {
 #max {
   width: 40px;
 }
-
-/* .type-container {
-
-} */
 
 footer {
   margin: 2px;
