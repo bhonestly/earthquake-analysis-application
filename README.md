@@ -86,22 +86,46 @@ Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/nz2T
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 |-----------|----------|----------------|---------------|-------------|
 | Build out Pre-Project Approval Materials | H | 3hrs | 3hrs | 3hrs |
-| Calling API | H | 3hrs | N/A | N/A | N/A |
-| Filter Location Data Functionality | H | 2hrs | N/A | N/A |
-| Filter MagnitudeData Functionality | H | 2hrs | N/A | N/A |
+| Calling API | H | 3hrs | 3.5hrs | 3.5hrs |
+| Filter Location Data Functionality | H | 2hrs | 3.5hrs | 3.5hrs |
+| Filter MagnitudeData Functionality | H | 2hrs | 3hrs | 3hrs |
 | Filter Time Data Functionality | H | 2hrs | N/A | N/A |
-| Filter Tsunami Data Functionality | H | 2hrs | N/A | N/A |
-| Appending Earthquake Results by Location | H | 2hrs | N/A | N/A |
-| Appending Earthquake Results by Magnitude| H | 2hrs | N/A | N/A |
+| Filter Tsunami Data Functionality | H | 2hrs | N/A  | N/A  |
+| Appending Earthquake Results by Location | H | 2hrs | 3hrs | 3hrs |
+| Appending Earthquake Results by Magnitude| H | 2hrs | 2hrs | 2hrs |
 | Appending Earthquake Results by Time | H | 2hrs | N/A | N/A |
 | Appending Earthquake Results by Tsunami | H | 2hrs | N/A | N/A |
 | Add Background Image | M | 1hrs | N/A | N/A |
-| Test/Refactor Code | M | 3hrs | N/A | N/A |
-| CSS for Dropdown Menus | L | 3hrs | N/A | N/A |
-| CSS for Results List | L | 3hrs | N/A | N/A |
-| CSS Responsive Design | L | 3hrs | N/A | N/A |
-| TOTAL HOURS | H | 35hrs | N/A| 3hrs | 3hrs |
+| Test/Refactor Code | M | 3hrs | 2hrs | 2hrs |
+| CSS for Dropdown Menus | L | 3hrs | 3hr | 3hr |
+| CSS for Results List | L | 3hrs | 3hrs | 3hrs |
+| CSS Responsive Design | L | 3hrs | 2hrs| 2hrs|
+| TOTAL HOURS | H | 33hrs | N/A| 36hrs | 36hrs |
 
 ## Code Snippet
+```
+magnitudeForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const maxInput = document.querySelector("#max");
+  const minInput = document.querySelector("#min");
+  const featuresByMagnitude = featuresArray.filter((feature) => {
+    if (maxInput.value === "") {
+      maxInput.value = 10;
+    }
+    if (minInput.value === "") {
+      minInput.value = 0;
+    }
+    return (
+      parseInt(maxInput.value) >= feature.properties.mag &&
+      parseInt(minInput.value) <= feature.properties.mag
+    );
+  });
+  displayDataByMagnitude(featuresByMagnitude);
+});
+```
 
 ## Change Log
+1. Solid background color instead of image.  With so much data being displayed it would be distracting.
+2. Added Type data instead of Tsunami and Time.  More interesting data
+3. Functionality to overwrite previous data was implimented instead of creating a refresh button.
+4. Magnitude dropdown changed to a Min and Mix field for easier search functionality.
