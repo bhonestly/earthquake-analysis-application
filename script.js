@@ -41,7 +41,7 @@ function appendLocationData(features) {
 
 function displayDataByLocation(filteredFeatures) {
   const dataContainer = document.querySelector(".data-container");
-  dataContainer.innerHTML = ''
+  dataContainer.innerHTML = "";
   filteredFeatures.forEach((feature) => {
     const time = feature.properties.time;
     const distanceFrom = feature.properties.place.split("of")[0];
@@ -52,6 +52,7 @@ function displayDataByLocation(filteredFeatures) {
     const felt = feature.properties.felt;
     const tsunami = feature.properties.tsunami;
     const featureTemplate = `
+    <div class="card">
     <div class="time">
       <p>Time Happened: ${time}</p>
     </div>
@@ -65,6 +66,7 @@ function displayDataByLocation(filteredFeatures) {
       <p>The Magnitude was: ${magnitude}</p>
       <p>Was Quake Felt: ${felt}</p>
       <p>Tsunami Associated: ${tsunami}</p>
+    </div>
     </div>
     `;
     dataContainer.insertAdjacentHTML("beforeend", featureTemplate);
@@ -83,7 +85,7 @@ locationForm.addEventListener("submit", (e) => {
 
 function displayDataByMagnitude(filteredFeatures) {
   const dataContainer = document.querySelector(".data-container");
-  dataContainer.innerHTML = ''
+  dataContainer.innerHTML = "";
   if (filteredFeatures.length > 0) {
     filteredFeatures.forEach((feature) => {
       const time = feature.properties.time;
@@ -95,6 +97,7 @@ function displayDataByMagnitude(filteredFeatures) {
       const felt = feature.properties.felt;
       const tsunami = feature.properties.tsunami;
       const featureTemplate = `
+      <div class="card">
       <div class="time">
         <p>Time Happened: ${time}</p>
       </div>
@@ -108,6 +111,7 @@ function displayDataByMagnitude(filteredFeatures) {
         <p>Magnitude: ${magnitude}</p>
         <p>Was Quake Felt: ${felt}</p>
         <p>Tsunami Associated: ${tsunami}</p>
+      </div>
       </div>
       `;
       dataContainer.insertAdjacentHTML("beforeend", featureTemplate);
@@ -155,7 +159,7 @@ function appendTypeData(features) {
 
 function displayDataByType(filteredFeatures) {
   const dataContainer = document.querySelector(".data-container");
-  dataContainer.innerHTML = ''
+  dataContainer.innerHTML = "";
   filteredFeatures.forEach((feature) => {
     const time = feature.properties.time;
     const distanceFrom = feature.properties.place;
@@ -166,6 +170,7 @@ function displayDataByType(filteredFeatures) {
     const felt = feature.properties.felt;
     const tsunami = feature.properties.tsunami;
     const featureTemplate = `
+    <div class="card">
       <div class="tsunami">
         <p>Tsunami Associated: ${tsunami}</p>
       </div>
@@ -181,6 +186,7 @@ function displayDataByType(filteredFeatures) {
       <div class="outcome">
         <p>The Magnitude was: ${magnitude}</p>
         <p>Was Quake Felt: ${felt}</p>
+      </div>
       </div>
       `;
     dataContainer.insertAdjacentHTML("beforeend", featureTemplate);
