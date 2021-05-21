@@ -17,33 +17,50 @@
     <title>Earthquake Anaylsis</title>
   </head>
   <body>
-    <h1>Earthquake Analysis Application</h1>
-    <div class="earthquake-container">
-      <form id="location-form">
-        <input id="location-input" list="select-location" placeholder="Location"/>
-        <datalist id="select-location">
-        </datalist>
-        <button type="submit">Get Location</button>
-      </form>
-      <form id="magnitude-form">
-        <input id="min" class="magnitude-input" placeholder="min" type="number" min="1" max="10"/>
-        <input id="max" class="magnitude-input" placeholder="max" type="number" min="1" max="10"/>
-        <button type="submit">Get Magnitude</button>
-      </form>
-      <form id="type-form">
-        <input id="type-input" list="select-type" placeholder="Type"/>
-        <datalist id="select-type">
-        </datalist>
-        <button type="submit">Get Type</button>
-      <form id="time-form">
-        <select id="select-time">
-          <option disabled selected>Time</option>
-        </select>
-        <button>Get Time</button>
-      </form>
+    <div class="header">
+      <h1>Earthquake Analysis Application</h1>
     </div>
-    <section class="data-container">
-      
-    </section>
+    <div class="earthquake-container">
+      <div class="location-container">
+        <form id="location-form">
+          <input
+            id="location-input"
+            list="select-location"
+            placeholder="Location"
+          />
+          <datalist id="select-location"> </datalist>
+          <button type="submit">Get Location</button>
+        </form>
+      </div>
+      <div class="magnitude-container">
+        <form id="magnitude-form">
+          <input
+            id="min"
+            class="magnitude-input"
+            placeholder="min"
+            type="number"
+            min="1"
+            max="10"
+          />
+          <input
+            id="max"
+            class="magnitude-input"
+            placeholder="max"
+            type="number"
+            min="1"
+            max="10"
+          />
+          <button type="submit">Get Magnitude</button>
+        </form>
+      </div>
+      <div class="type-container">
+        <form id="type-form">
+          <input id="type-input" list="select-type" placeholder="Type" />
+          <datalist id="select-type"> </datalist>
+          <button type="submit">Get Type</button>
+        </form>
+      </div>
+    </div>
+    <section class="data-container"></section>
   </body>
 </html>

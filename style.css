@@ -1,3 +1,34 @@
-.magnitude-input {
-  width: 6ch;
+body {
+  text-align: center;
 }
+
+div {
+  margin: 20px;
+}
+
+.earthquake-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header {
+  justify-content: center;
+  width: ;
+}
+
+.locaion-container {
+  flex: 1;
+  justify-content: space-around;
+}
+
+.magnitude-container {
+  flex: 1;
+  /* padding-left: 50px; */
+}
+
+.type-container {
+  flex: 1;
+  justify-content: space-around;
+}
+
