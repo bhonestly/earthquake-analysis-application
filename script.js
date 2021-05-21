@@ -8,7 +8,7 @@ let featuresArray = [];
 const locationSearch = async () => {
   try {
     const response = await axios.get(
-      "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+      "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
     );
     const data = response.data.features;
     featuresArray = data;

@@ -8,10 +8,15 @@ body {
 
 .card {
   border: 1px solid black;
+  width: 300px;
+  /* flex-direction: row; */
 }
 
 .data-container {
   /* height: 70vh; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
 }
 
 div {
@@ -55,4 +60,21 @@ div {
 footer {
   margin: 2px;
   text-align: right;
+  /* position: relative; */
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .earthquake-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
 }
