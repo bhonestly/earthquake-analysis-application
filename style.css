@@ -1,20 +1,22 @@
 body {
   text-align: center;
+  border: 3px solid black;
 }
 
 div {
   margin: 20px;
 }
 
+.h1 {
+  justify-content: center;
+  border: 2px solid rgb(60, 49, 49);
+}
+
 .earthquake-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.header {
-  justify-content: center;
-  width: ;
+  background-color: rgb(162, 151, 137)
 }
 
 .locaion-container {
@@ -24,7 +26,14 @@ div {
 
 .magnitude-container {
   flex: 1;
-  /* padding-left: 50px; */
+}
+
+#min {
+  width: 40px;
+}
+
+#max {
+  width: 40px;
 }
 
 .type-container {
@@ -32,3 +41,6 @@ div {
   justify-content: space-around;
 }
 
+footer {
+  margin: 2px;
+}
