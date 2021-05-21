@@ -1,7 +1,7 @@
 # Project Overview
 
 ## Earthquake Analysis Application
-Deployed URL [Goes Here]
+Deployed URL [Deployed Link](https://bhonestly.github.io/earthquake-analysis-application/)
 
 ## Project Description
 User will be able to search earthquake data from across the world for the past day.  User will be able to look up datatypes such as magnitude, location, time and if a tsunami was associated with it.
