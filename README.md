@@ -73,11 +73,11 @@ Link to wireframe…Shows proposed user interface page
 |   Day   |   Deliverable   |   Status   |
 |---------|-----------------|------------|
 | May 14-16 | Prompt / Wireframes / Priority Matrix / Timeframes| Complete |
-| May 17 | Project Approval / Initial Application Structure / Pseudocode / Basic HTML Boilerplate | Incomplete |
-| May 18 | Core Appliction functionality | Incomplete |
-| May 19 | Initial Clickable Model / MVP | Incomplete |
-| May 20 | CSS / Post MVP buildout | Incomplete |
-| May 21 | Presentation of Project | Incomplete |
+| May 17 | Project Approval / Initial Application Structure / Pseudocode / Basic HTML Boilerplate | Complete |
+| May 18 | Core Appliction functionality | Complete |
+| May 19 | Initial Clickable Model / MVP | Complete |
+| May 20 | CSS / Post MVP buildout | Complete |
+| May 21 | Presentation of Project | Complete |
 
 ## Priority Matrix
 Direct Link to Priority Matrix... [Priority Matrix Model](https://imgur.com/nz2TuhJ)
