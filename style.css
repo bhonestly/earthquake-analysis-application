@@ -11,7 +11,9 @@ body {
   width: 300px;
   height: 328px;
   background-color: rgb(237, 220, 199);
-}
+} 
+
+
 
 .data-container {
   flex-wrap: wrap;
