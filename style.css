@@ -3,17 +3,15 @@ body {
   border: 3px solid black;
   min-height: 95vh;
   height: auto;
-  background-color: rgb(249, 236, 218);
+  background-color: rgb(102, 99, 94);
 }
 
 .card {
   border: 1px solid black;
   width: 300px;
   height: 328px;
-  background-color: rgb(237, 220, 199);
+  background-color: rgb(200, 168, 129);
 } 
-
-
 
 .data-container {
   flex-wrap: wrap;
@@ -28,14 +26,15 @@ div {
 
 .h1 {
   justify-content: center;
-  border: 2px solid rgb(60, 49, 49);
+  background-color: rgb(11, 181, 237);
+  border: 2px solid rgb(31, 27, 27);
 }
 
 .earthquake-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(162, 151, 137)
+  background-color: rgb(223, 138, 34)
 }
 
 #min {
